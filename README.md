@@ -132,11 +132,6 @@ El ViewModel resuelve el problema porque:
 
 ---
 
+## Autores
 
----
-
-## Autors
-
-Andrés Ismalej 24005
-Denil Parada 24761
-Jorge Chupina 22213
+Andrés Ismalej 24005, Denil Parada 24761 y Jorge Chupina 22213
