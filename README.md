@@ -66,13 +66,10 @@ app/src/main/java/com/example/lab9/
 ```
 ---
 
-## Capturas de Pantalla
+###  Evidenciar que el estado con remember no sobrevive cambios de configuración (Video de la Parte 1): LikeCounterScreen
 
-### Parte 1: LikeCounterScreen
+[EvidenciaParte1.webm](https://github.com/user-attachments/assets/395c7c3e-fd45-406c-ac2f-52aad12e69c4)
 
-![LikeCounterScreen](ruta/a/captura1.png)
-
-*Estado con remember - Se pierde al rotar el dispositivo*
 
 ## Reflexiones
 
