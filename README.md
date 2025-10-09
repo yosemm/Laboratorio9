@@ -1,5 +1,14 @@
 # Laboratorio 9 - MVVM con Jetpack Compose
-Aplicación Android que implementa el patrón MVVM (Model-View-ViewModel) con Jetpack Compose para gestionar una Lista de Deseos. El proyecto demuestra el manejo de estado con StateFlow, navegación entre pantallas y persistencia de datos durante cambios de configuración.
+Se realizó un proyecto en Android que implementa el patrón MVVM (Model-View-ViewModel) con Jetpack Compose para gestionar una Lista de Deseos. 
+El proyecto demuestra el manejo de estado con StateFlow, navegación entre pantallas y persistencia de datos durante cambios de configuración.
+
+## Video de funcionamiento final
+
+
+
+https://github.com/user-attachments/assets/274c0867-e5b8-4936-b834-4c5f054f5552
+
+
 
 ## Arquitectura MVVM
 
@@ -64,32 +73,6 @@ app/src/main/java/com/example/lab9/
 ![LikeCounterScreen](ruta/a/captura1.png)
 
 *Estado con remember - Se pierde al rotar el dispositivo*
-
----
-
-### Parte 2: WishlistScreen
-
-![WishlistScreen](ruta/a/captura2.png)
-
-*Lista de productos con estado persistente usando ViewModel*
-
----
-
-### Parte 3: ProfileScreen
-
-![ProfileScreen](ruta/a/captura3.png)
-
-*Pantalla de perfil mostrando conteo sincronizado*
-
----
-
-### Navegación entre pantallas
-
-![Navegación](ruta/a/captura4.png)
-
-*ViewModel compartido mantiene estado consistente*
-
----
 
 ## Reflexiones
 
