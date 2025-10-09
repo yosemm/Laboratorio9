@@ -1,5 +1,6 @@
 package com.example.lab9.feature.wishlist.presentation.components
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -20,24 +21,26 @@ import com.example.lab9.feature.wishlist.domain.model.Product
 
 @Composable
 fun ProductItem(
-    product: Product,
-    onToggleWishlist: (Int) -> Unit,
-    modifier: Modifier = Modifier
+    product: Product, onToggleWishlist: (Int) -> Unit, modifier: Modifier = Modifier
 ) {
     Card(
         modifier = modifier.fillMaxWidth(),
-        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        shape = CardDefaults.shape
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
                 text = product.name,
-                style = MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.weight(1f)
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.padding(end = 8.dp),
+                color = MaterialTheme.colorScheme.onSurface
             )
 
             IconButton(onClick = { onToggleWishlist(product.id) }) {
@@ -46,16 +49,14 @@ fun ProductItem(
                         Icons.Filled.Favorite
                     } else {
                         Icons.Filled.FavoriteBorder
-                    },
-                    contentDescription = if (product.isWishlisted) {
+                    }, contentDescription = if (product.isWishlisted) {
                         "Quitar de favoritos"
                     } else {
                         "Agregar a favoritos"
-                    },
-                    tint = if (product.isWishlisted) {
+                    }, tint = if (product.isWishlisted) {
                         MaterialTheme.colorScheme.primary
                     } else {
-                        MaterialTheme.colorScheme.onSurface
+                        MaterialTheme.colorScheme.onSurfaceVariant
                     }
                 )
             }
